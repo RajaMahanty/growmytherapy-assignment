@@ -1,10 +1,18 @@
 "use client";
 
+import { useFadeInOnScroll } from "./useFadeInOnScroll";
+
 export default function Footer() {
+	const { ref, isVisible } = useFadeInOnScroll();
 	return (
-		<footer className="bg-bg-1 text-text-3 py-12 flex flex-col items-center justify-center text-center font-light">
-			<div className="max-w-2xl w-full flex flex-col items-center gap-2">
-				<h2 className="text-2xl md:text-3xl font-serif mb-10">
+		<footer
+			ref={ref}
+			className={`bg-bg-1 text-text-3 py-8 sm:py-12 flex flex-col items-center justify-center text-center font-light px-2 sm:px-4 transition-opacity duration-1000 ${
+				isVisible ? "opacity-100" : "opacity-0"
+			}`}
+		>
+			<div className="max-w-xs sm:max-w-xl md:max-w-2xl w-full flex flex-col items-center gap-1 sm:gap-2">
+				<h2 className="text-lg sm:text-2xl md:text-3xl font-serif mb-4 sm:mb-10">
 					Jennifer Hahm, Ph.D., Licensed Psychologist
 				</h2>
 				<a

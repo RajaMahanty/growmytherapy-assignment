@@ -1,9 +1,11 @@
 "use client";
 
 import { useState } from "react";
+import { useFadeInOnScroll } from "./useFadeInOnScroll";
 
 export default function FAQ() {
 	const [openIndex, setOpenIndex] = useState<number | null>(0);
+	const { ref, isVisible } = useFadeInOnScroll();
 
 	const faqs = [
 		{
@@ -25,13 +27,19 @@ export default function FAQ() {
 	};
 
 	return (
-		<section id="faq" className="py-20 bg-bg-1">
-			<div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-				<div className="text-center mb-16">
-					<h2 className="text-3xl md:text-4xl font-bold text-text-2 mb-4">
+		<section
+			id="faq"
+			ref={ref}
+			className={`py-10 sm:py-20 bg-bg-1 transition-opacity duration-1000 ${
+				isVisible ? "opacity-100" : "opacity-0"
+			}`}
+		>
+			<div className="max-w-xs sm:max-w-2xl lg:max-w-4xl mx-auto px-2 sm:px-4 lg:px-8">
+				<div className="text-center mb-8 sm:mb-16">
+					<h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-text-2 mb-2 sm:mb-4">
 						Frequently Asked Questions
 					</h2>
-					<p className="text-xl text-text-1 max-w-2xl mx-auto">
+					<p className="text-base sm:text-xl text-text-1 max-w-xs sm:max-w-2xl mx-auto">
 						Common questions about therapy and getting started
 					</p>
 				</div>

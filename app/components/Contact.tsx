@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import { useFadeInOnScroll } from "./useFadeInOnScroll";
 
 const initialState = {
 	name: "",
@@ -32,6 +33,7 @@ const Contact: React.FC = () => {
 	const [form, setForm] = useState(initialState);
 	const [errors, setErrors] = useState(initialErrors);
 	const [submitted, setSubmitted] = useState(false);
+	const { ref, isVisible } = useFadeInOnScroll();
 
 	const handleChange = (
 		e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -75,10 +77,16 @@ const Contact: React.FC = () => {
 	};
 
 	return (
-		<div className="flex justify-center items-center min-h-screen bg-[#f6f8fa] py-8">
+		<section
+			id="contact"
+			ref={ref}
+			className={`flex justify-center items-center min-h-screen bg-[#f6f8fa] py-4 sm:py-8 px-2 sm:px-4 transition-opacity duration-1000 ${
+				isVisible ? "opacity-100" : "opacity-0"
+			}`}
+		>
 			<form
 				onSubmit={handleSubmit}
-				className="w-full max-w-lg bg-white border border-green-900 rounded-xl shadow-md p-8"
+				className="w-full sm:max-w-md md:max-w-lg bg-white border border-green-900 rounded-xl shadow-md p-4 sm:p-8"
 			>
 				<h2 className="text-3xl font-bold text-center text-green-900 mb-2">
 					Contact
@@ -224,27 +232,32 @@ const Contact: React.FC = () => {
 					<span className="mr-1">ⓘ</span> By clicking submit you consent to be
 					contacted.
 				</p>
-				<p>
-					<strong>Location:</strong> 1287 Maplewood Drive, Los Angeles, CA 90026
-				</p>
-				<p>
-					<strong>Phone:</strong> (323) 555-0192
-				</p>
-				<p>
-					<strong>Email:</strong>{" "}
-					<a href="mailto:serena@blakepsychology.com">
-						serena@blakepsychology.com
-					</a>
-				</p>
-				<p>
-					<strong>Office Hours:</strong>
-				</p>
-				<ul>
-					<li>In-person: Tue & Thu, 10 AM–6 PM</li>
-					<li>Virtual via Zoom: Mon, Wed & Fri, 1 PM–5 PM</li>
-				</ul>
+				{/* Contact Details Section */}
+				<div className="mt-8 bg-green-50 border border-green-200 rounded-lg p-4 sm:p-6 shadow-sm text-green-900">
+					<p className="mb-2">
+						<span className="font-semibold">Location:</span> 1287 Maplewood
+						Drive, Los Angeles, CA 90026
+					</p>
+					<p className="mb-2">
+						<span className="font-semibold">Phone:</span> (323) 555-0192
+					</p>
+					<p className="mb-2">
+						<span className="font-semibold">Email:</span>{" "}
+						<a
+							href="mailto:serena@blakepsychology.com"
+							className="underline hover:text-green-700"
+						>
+							serena@blakepsychology.com
+						</a>
+					</p>
+					<p className="mb-1 font-semibold">Office Hours:</p>
+					<ul className="list-disc list-inside ml-2 text-green-900">
+						<li>In-person: Tue & Thu, 10 AM–6 PM</li>
+						<li>Virtual via Zoom: Mon, Wed & Fri, 1 PM–5 PM</li>
+					</ul>
+				</div>
 			</form>
-		</div>
+		</section>
 	);
 };
 

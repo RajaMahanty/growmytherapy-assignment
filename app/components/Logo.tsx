@@ -3,42 +3,20 @@ import icon from "../../public/icon.png";
 
 export default function Logo() {
 	return (
-		<div style={{ display: "flex", alignItems: "center" }}>
-			<div
-				style={{
-					width: "60px",
-					height: "60px",
-					borderRadius: "50%",
-					backgroundColor: "#2980b9",
-					overflow: "hidden",
-					position: "relative",
-				}}
-			>
+		<div className="flex items-center">
+			<div className="w-12 h-12 sm:w-[60px] sm:h-[60px] rounded-full bg-[#2980b9] overflow-hidden relative">
 				<Image
 					src={icon}
 					alt="Mental Health Icon"
-					layout="fill"
-					objectFit="cover"
+					fill
+					className="object-cover"
 				/>
 			</div>
-			<div style={{ marginLeft: "15px" }}>
-				<div
-					style={{
-						fontFamily: "Georgia, serif",
-						fontSize: "24px",
-						fontWeight: "bold",
-						color: "#2c3e50",
-					}}
-				>
+			<div className="ml-2 sm:ml-4">
+				<div className="font-serif text-lg sm:text-2xl font-bold text-[#2c3e50]">
 					Dr. Serena Blake
 				</div>
-				<div
-					style={{
-						fontFamily: "Arial, sans-serif",
-						fontSize: "24px",
-						color: "#7f8c8d",
-					}}
-				>
+				<div className="font-sans text-base sm:text-xl text-[#7f8c8d]">
 					PsyD · Clinical Psychologist
 				</div>
 			</div>
