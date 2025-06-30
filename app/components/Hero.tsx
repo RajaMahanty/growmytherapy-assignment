@@ -9,7 +9,7 @@ export default function Hero() {
 	return (
 		<section
 			id="hero"
-			className="relative flex items-center justify-center min-h-[105vh] w-full bg-[#f5f3ec] pb-32 px-2 sm:px-4 md:px-8"
+			className="relative flex items-center justify-center min-h-[105vh] w-full bg-[#f5f3ec] pb-32"
 		>
 			{/* Container for Logo and Video Card */}
 			<div className="flex flex-col w-full mx-2 sm:mx-4 md:mx-16">
