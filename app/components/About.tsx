@@ -7,35 +7,18 @@ export default function About() {
 				{/* Left: Text */}
 				<div className="flex-1 text-text-1">
 					<h2 className="text-3xl font-bold font-serif mb-14 text-text-1">
-						About Dr. Jennifer Hahm
+						About Dr. Serena Blake
 					</h2>
 					<div className="space-y-8">
 						<p className="text-base tracking-tight leading-10 text-text-1 font-light">
-							Finding time and opportunities to care for ourselves can be
-							incredibly challenging in today's busy and demanding world. I
-							believe therapy offers a dedicated space for self-care, providing
-							the support and tools needed to improve this essential practice.
-							Therapy can help individuals identify and clarify their goals,
-							values, and the various elements that contribute to their
-							well-being, recognizing that these aspects vary from person to
-							person.
-						</p>
-						<p className="text-base tracking-tight leading-10 text-text-1 font-light">
-							I am dedicated to supporting this journey by offering active
-							listening, psychological knowledge, empathy, compassion, and
-							insights into behavioral patterns and tendencies. I hold a
-							master's degree in Clinical Psychology from the Michigan School of
-							Psychology (2012) and a Ph.D. in Counseling Psychology from
-							Western Michigan University (2018). My experience spans therapy
-							and psychological assessment in psychiatric inpatient units,
-							academic medical centers, universities, and outpatient practice
-							settings.
-						</p>
-						<p className="text-base tracking-tight leading-10 text-text-1 font-light">
-							My therapeutic approach is primarily psychodynamic and humanistic,
-							enriched by influences from positive psychology, existentialism,
-							family systems theory, acceptance and commitment concepts, and
-							mindfulness practices.
+							Dr. Serena Blake is a licensed clinical psychologist (PsyD) based
+							in Los Angeles, CA, with eight years of experience and over 500
+							client sessions. She blends evidence-based approaches—like
+							cognitive-behavioral therapy and mindfulness—with compassionate,
+							personalized care to help you overcome anxiety, strengthen
+							relationships, and heal from trauma. Whether you meet in her
+							Maplewood Drive office or connect virtually via Zoom, Dr. Blake is
+							committed to creating a safe, supportive space for you to thrive.
 						</p>
 					</div>
 				</div>
@@ -43,7 +26,7 @@ export default function About() {
 				<div className="flex-1 flex justify-center md:justify-end items-center">
 					<Image
 						src="/therepist.jpg"
-						alt="Dr. Jennifer Hahm"
+						alt="Dr. Serena Blake"
 						width={500}
 						height={700}
 						className="object-cover w-[500px] h-[700px]"

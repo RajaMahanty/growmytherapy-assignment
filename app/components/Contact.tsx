@@ -224,6 +224,25 @@ const Contact: React.FC = () => {
 					<span className="mr-1">ⓘ</span> By clicking submit you consent to be
 					contacted.
 				</p>
+				<p>
+					<strong>Location:</strong> 1287 Maplewood Drive, Los Angeles, CA 90026
+				</p>
+				<p>
+					<strong>Phone:</strong> (323) 555-0192
+				</p>
+				<p>
+					<strong>Email:</strong>{" "}
+					<a href="mailto:serena@blakepsychology.com">
+						serena@blakepsychology.com
+					</a>
+				</p>
+				<p>
+					<strong>Office Hours:</strong>
+				</p>
+				<ul>
+					<li>In-person: Tue & Thu, 10 AM–6 PM</li>
+					<li>Virtual via Zoom: Mon, Wed & Fri, 1 PM–5 PM</li>
+				</ul>
 			</form>
 		</div>
 	);

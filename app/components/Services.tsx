@@ -27,63 +27,57 @@ export default function Services() {
 				<div className="flex-1 flex flex-col items-center max-w-sm mx-auto">
 					<div className="size-96 rounded-full overflow-hidden mb-8">
 						<img
-							src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=600&q=80"
-							alt="Healthcare Providers"
+							src="/Anxiety&StressManagement.jpg"
+							alt="Anxiety & Stress Management"
 							className="w-full h-full object-cover"
 						/>
 					</div>
 					<h3 className="text-xl font-serif font-normal mb-4 text-text-2 text-center leading-loose">
-						Therapy for Healthcare Providers and Students
+						Anxiety & Stress Management
 					</h3>
 					<p className="text-base text-text-2 text-center leading-loose">
-						The care you provide for others may be driving you to seek therapy,
-						whether due to burnout, compassion fatigue, imposter syndrome,
-						people-pleasing tendencies, or perfectionism. Whether you're in
-						pre-professional school, undergoing training, or reflecting on a
-						long career in healthcare, we can address the unique stressors of
-						your journey.
+						Learn effective strategies to manage anxiety, reduce stress, and
+						regain a sense of calm and control in your daily life. Therapy can
+						help you identify triggers, develop coping skills, and build
+						resilience for lasting well-being.
 					</p>
 				</div>
 				{/* Service 2 */}
 				<div className="flex-1 flex flex-col items-center max-w-sm mx-auto">
 					<div className="size-96 rounded-full overflow-hidden mb-8">
 						<img
-							src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80"
-							alt="Trauma and Grief"
+							src="/RelationshipCounseling.jpg"
+							alt="Relationship Counseling"
 							className="w-full h-full object-cover"
 						/>
 					</div>
 					<h3 className="text-xl font-serif font-normal mb-4 text-text-2 text-center leading-loose">
-						Therapy for Trauma and Grief
+						Relationship Counseling
 					</h3>
 					<p className="text-base text-text-2 text-center leading-loose">
-						Life's challenges, whether a difficult childhood, a traumatic event
-						or series of events, or the loss of someone or something deeply
-						meaningful, can lead to profound experiences of trauma and grief.
-						Therapy offers a supportive space to process these experiences, care
-						for yourself amidst painful thoughts and emotions, and move toward
-						healing.
+						Improve communication, resolve conflicts, and strengthen your
+						relationships. Whether you are facing challenges with a partner,
+						family member, or friend, therapy provides a supportive space to
+						foster understanding and connection.
 					</p>
 				</div>
 				{/* Service 3 */}
 				<div className="flex-1 flex flex-col items-center max-w-sm mx-auto">
 					<div className="size-96 rounded-full overflow-hidden mb-8">
 						<img
-							src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80"
-							alt="Second Generation Individuals"
+							src="/TraumaRecovery.jpg"
+							alt="Trauma Recovery"
 							className="w-full h-full object-cover"
 						/>
 					</div>
 					<h3 className="text-xl font-serif font-normal mb-4 text-text-2 text-center leading-loose">
-						Therapy for Second Generation Individuals In Immigrant Families
+						Trauma Recovery
 					</h3>
 					<p className="text-base text-text-2 text-center leading-loose">
-						Second-generation individuals in immigrant families, born in the
-						U.S. to at least one parent born abroad, often navigate the
-						complexities of multiple cultures and diverse expectations. This
-						experience can bring challenges such as feeling like a cultural
-						outsider, balancing family and societal values, and managing
-						intergenerational relationships.
+						Heal from past traumatic experiences in a safe and compassionate
+						environment. Therapy supports you in processing difficult memories,
+						managing emotional responses, and moving forward with renewed hope
+						and strength.
 					</p>
 				</div>
 			</div>
@@ -93,8 +87,13 @@ export default function Services() {
 					Rates and Insurance
 				</h2>
 				<div className="text-center text-lg text-text-3 space-y-4">
-					<div>Session Fee - $200</div>
-					<div>Psychodiagnostic Evaluation - $225</div>
+					<p>
+						<strong>Session Fees:</strong>
+					</p>
+					<ul>
+						<li>$200 / individual session</li>
+						<li>$240 / couples session</li>
+					</ul>
 				</div>
 				<p className="text-center mt-8 text-text-3">
 					I accept both private pay and insurance. I am in-network with BCBS and

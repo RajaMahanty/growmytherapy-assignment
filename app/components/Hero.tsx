@@ -38,16 +38,12 @@ export default function Hero() {
 						<h1 className="text-3xl md:text-5xl font-bold text-white drop-shadow-lg mb-4 text-center animate-fadein">
 							Psychological Care for
 						</h1>
-						<h2 className="text-3xl md:text-5xl font-bold text-white drop-shadow-lg mb-4 text-center animate-fadein delay-200">
+						<h2 className="mt-10 text-3xl md:text-5xl font-bold text-white drop-shadow-lg mb-4 text-center animate-fadein delay-200">
 							Change, Insight, and Well-Being
 						</h2>
-						<p className="text-base md:text-xl text-white/90 mb-8 max-w-2xl text-center drop-shadow animate-fadein delay-400">
+						<p className="mt-10 text-base md:text-xl text-white/90 mb-8 max-w-2xl text-center drop-shadow animate-fadein delay-400">
 							Offering individual psychotherapy for adults via telehealth in
-							Michigan and{" "}
-							<a href="#" className="underline">
-								most U.S. states
-							</a>{" "}
-							through PSYPACT participation
+							Michigan and most U.S. states through PSYPACT participation
 						</p>
 						<Link
 							href="#contact"

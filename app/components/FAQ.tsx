@@ -7,34 +7,16 @@ export default function FAQ() {
 
 	const faqs = [
 		{
-			question: "How do I schedule my first session?",
-			answer:
-				"You can schedule your first session by filling out the contact form on this page, calling me directly at (555) 123-4567, or sending an email to hello@growmytherapy.com. I'll get back to you within 24 hours to arrange a consultation and answer any questions you might have about the process.",
-		},
-		{
-			question: "What happens during the first session?",
-			answer:
-				"The first session is a consultation where we'll discuss your goals, concerns, and what you hope to achieve through therapy. It's also a chance for you to ask questions and see if we're a good fit for working together. We'll talk about your current situation, your history, and what brings you to therapy. This helps me understand your needs and develop a personalized treatment plan.",
-		},
-		{
 			question: "Do you accept insurance?",
-			answer:
-				"Yes, I accept most major insurance plans including Blue Cross Blue Shield, Aetna, Cigna, and UnitedHealthcare. I also offer sliding scale fees for those without insurance coverage. Before your first session, I recommend calling your insurance provider to verify your mental health benefits and any copay or deductible requirements.",
+			answer: "No, but a superbill is provided for self-submission.",
 		},
 		{
-			question: "Can I do virtual sessions?",
-			answer:
-				"Absolutely! I offer both virtual and in-person sessions. Virtual sessions are conducted through a secure, HIPAA-compliant platform and are just as effective as in-person therapy. Many clients prefer the convenience and comfort of virtual sessions, especially for busy schedules or those who prefer to meet from home.",
+			question: "Are online sessions available?",
+			answer: "Yes—all virtual sessions via Zoom.",
 		},
 		{
-			question: "How long does therapy typically last?",
-			answer:
-				"The length of therapy varies depending on your individual needs and goals. Some clients see significant improvement in 8-12 sessions, while others may benefit from longer-term therapy. We'll regularly review your progress and discuss whether to continue, reduce frequency, or conclude therapy based on your goals and progress.",
-		},
-		{
-			question: "What if I'm not sure if therapy is right for me?",
-			answer:
-				"That's completely normal! Many people feel uncertain about starting therapy. I offer a free 15-minute phone consultation where you can ask questions and get a sense of whether therapy with me would be helpful. There's no pressure to commit - it's just an opportunity to learn more and see if it feels like a good fit for you.",
+			question: "What is your cancellation policy?",
+			answer: "24-hour notice required.",
 		},
 	];
 
