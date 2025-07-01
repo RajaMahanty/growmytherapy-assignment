@@ -198,7 +198,7 @@ const Contact: React.FC = () => {
 						<span className="text-red-600 text-sm">{errors.preferredTime}</span>
 					)}
 					<span className="text-xs text-gray-600 block mt-1">
-						Let us know when you're typically available for a call or
+						Let us know when you&#39;re typically available for a call or
 						consultation
 					</span>
 				</div>

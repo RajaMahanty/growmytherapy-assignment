@@ -94,7 +94,7 @@ export default function FAQ() {
 				{/* Contact CTA */}
 				<div className="mt-12 text-center">
 					<p className="text-text-1 mb-4">
-						Still have questions? I'm here to help!
+						Still have questions? I&#39;m here to help!
 					</p>
 					<a
 						href="#contact"

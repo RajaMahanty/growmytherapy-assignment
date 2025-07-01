@@ -1,5 +1,4 @@
 "use client";
-import Link from "next/link";
 import { useFadeInOnScroll } from "./useFadeInOnScroll";
 
 export default function Services() {
@@ -22,8 +21,9 @@ export default function Services() {
 					You may be led to therapy by anxiety, depression, relationship stress,
 					past or recent trauma, grief and loss, self-esteem issues, or
 					challenges with family, parenting, or parental relationships. Whatever
-					the source of your stress, you don't have to face it alone. Therapy
-					offers you the time and space to work toward wellness and peace.
+					the source of your stress, you don&#39;t have to face it alone.
+					Therapy offers you the time and space to work toward wellness and
+					peace.
 				</p>
 			</div>
 			<hr className="border-t-2 border-[#7e7e6b] w-11/12 mx-auto " />
@@ -108,7 +108,7 @@ export default function Services() {
 					Aetna.
 				</p>
 				<p className="text-center mt-2 sm:mt-4 text-text-3">
-					For out-of-network plans, I've partnered with Mentaya using{" "}
+					For out-of-network plans, I&#39;ve partnered with Mentaya using{" "}
 					<a
 						href="https://app.mentaya.com/p/2q8k1r6kz1r1"
 						className="underline"
